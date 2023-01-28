@@ -1,0 +1,74 @@
+<!--  
+    Project Name : Doctor's Call (Appointment Booking App)
+    Description : This system fetches the available slot automatically and let you choose the dates too exepts sundays and full slots and generates tokens
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor's Call</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="container flexy">
+        <a href="/index.html">
+          <h1>Doctor's Call</h1>
+        </a>
+        <ul class="navMenus flexy">
+          <li><a href="/Pages/token.html">Tokens</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="container flexy">
+        <div class="details">
+          <h1 class="headline">Booking Health Appointments is Easy Now..</h1>
+        </div>
+        <div class="formContain">
+          <form id="aptGen">
+            <h2>Request Appointment</h2>
+            <div class="inpGrp">
+              <label for="Name">Name</label>
+              <input type="text" name="Name" id="formName" required />
+            </div>
+            <div class="inpGrp">
+              <label for="Contact">Contact</label>
+              <input type="tel" name="Contact" id="formContact" required />
+            </div>
+            <div class="inpGrp">
+              <label for="Symptoms">Symptoms</label>
+              <textarea
+                name="Symptoms"
+                id="Symptoms"
+                rows="4"
+                placeholder="Enter your Symptoms"
+                required
+              ></textarea>
+            </div>
+            <div class="inpGrp">
+              <label for="AppointmentDate">Appointment Date</label>
+              <input
+                type="date"
+                min=""
+                value=""
+                name="AppointmentDate"
+                id="AppointmentDate"
+                required
+              />
+            </div>
+            <input type="submit" value="Request an Appointment" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="/JAVASCRIPT/app.js"></script>
+  </body>
+</html>
